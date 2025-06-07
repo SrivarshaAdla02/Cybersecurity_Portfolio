@@ -8,33 +8,33 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Srivarsha Adla </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
-            <br />
-            I am currently employed as a software developer at Juspay.
-            <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
+            I’m <span className="purple">Srivarsha Adla</span>, currently based in{" "}
+            <span className="purple">Albany, NY, USA</span>, and working as an{" "}
+            <span className="purple">Information Security Office Intern</span> at the New York State Education Department.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            With a background in Digital Forensics and Cybersecurity, my work focuses on:
+            <ul>
+              <li className="about-activity">
+                <ImPointRight /> Threat detection & log correlation using <b className="purple">Splunk</b>
+              </li>
+              <li className="about-activity">
+                <ImPointRight /> Endpoint security monitoring with <b className="purple">CrowdStrike</b>
+              </li>
+              <li className="about-activity">
+                <ImPointRight /> Vulnerability assessments using <b className="purple">Nessus</b> and <b className="purple">Qualys</b>
+              </li>
+              <li className="about-activity">
+                <ImPointRight /> Hands-on network analysis with <b className="purple">Wireshark</b> and <b className="purple">Sysmon</b>
+              </li>
+            </ul>
+            I have experience with scripting in <b className="purple">Python</b> and <b className="purple">PowerShell</b> for automating analysis and response tasks. I actively contribute to projects involving security dashboards, breach detection, and incident timelines.
           </p>
-          <ul>
-            <li className="about-activity">
-              <ImPointRight /> Playing Games
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Travelling
-            </li>
-          </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+            "Cybersecurity is not a product — it's a process. I build, monitor, and defend."
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <footer className="blockquote-footer">Srivarsha Adla</footer>
         </blockquote>
       </Card.Body>
     </Card>
@@ -42,3 +42,4 @@ function AboutCard() {
 }
 
 export default AboutCard;
+

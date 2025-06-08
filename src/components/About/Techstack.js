@@ -1,60 +1,57 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { FaBug, FaDatabase, FaShieldAlt, FaCloud, FaHtml5 } from "react-icons/fa";
-import { SiWireshark, SiPfsense, SiMicrosoftazure, SiPowerbi, SiMysql, SiJavascript, SiTerraform, SiElastic } from "react-icons/si";
-import { GiFirewall } from "react-icons/gi";
+import { FaBug, FaShieldAlt, FaNetworkWired, FaCloud, FaFingerprint, FaHtml5, FaPython, FaUserShield } from "react-icons/fa";
+import { SiJavascript, SiNginx } from "react-icons/si";
 import { BsTerminalFill } from "react-icons/bs";
+import { MdPolicy, MdSecurity } from "react-icons/md";
+import { GiMagnifyingGlass } from "react-icons/gi";
+import { RiSearchEyeLine } from "react-icons/ri";
+import { GrCompliance } from "react-icons/gr";
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons text-center">
-        <SiWireshark size={40} />
-        <p>Wireshark</p>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaBug size={40} /> {/* Vulnerability Management */}
       </Col>
-      <Col xs={4} md={2} className="tech-icons text-center">
-        <FaBug size={40} />
-        <p>Metasploit</p>
+      <Col xs={4} md={2} className="tech-icons">
+        <MdSecurity size={40} /> {/* Incident Response */}
       </Col>
-      <Col xs={4} md={2} className="tech-icons text-center">
-        <SiPfsense size={40} />
-        <p>pfSense</p>
+      <Col xs={4} md={2} className="tech-icons">
+        <RiSearchEyeLine size={40} /> {/* Threat Analysis */}
       </Col>
-      <Col xs={4} md={2} className="tech-icons text-center">
-        <SiElastic size={40} />
-        <p>ELK Stack</p>
+      <Col xs={4} md={2} className="tech-icons">
+        <MdPolicy size={40} /> {/* Security Policies */}
       </Col>
-      <Col xs={4} md={2} className="tech-icons text-center">
-        <FaShieldAlt size={40} />
-        <p>Nessus</p>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaHtml5 size={40} /> {/* HTML */}
       </Col>
-      <Col xs={4} md={2} className="tech-icons text-center">
-        <BsTerminalFill size={40} />
-        <p>Snort</p>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaPython size={40} /> {/* Python */}
       </Col>
-      <Col xs={4} md={2} className="tech-icons text-center">
-        <SiPowerbi size={40} />
-        <p>Power BI</p>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiJavascript size={40} /> {/* JavaScript */}
       </Col>
-      <Col xs={4} md={2} className="tech-icons text-center">
-        <SiMicrosoftazure size={40} />
-        <p>Microsoft Azure</p>
+      <Col xs={4} md={2} className="tech-icons">
+        <BsTerminalFill size={40} /> {/* Bash Scripting */}
       </Col>
-      <Col xs={4} md={2} className="tech-icons text-center">
-        <SiMysql size={40} />
-        <p>SQL / MySQL</p>
+      <Col xs={4} md={2} className="tech-icons">
+        <GiMagnifyingGlass size={40} /> {/* OSINT */}
       </Col>
-      <Col xs={4} md={2} className="tech-icons text-center">
-        <SiJavascript size={40} />
-        <p>JavaScript</p>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaShieldAlt size={40} /> {/* NIST Framework */}
       </Col>
-      <Col xs={4} md={2} className="tech-icons text-center">
-        <SiTerraform size={40} />
-        <p>Terraform</p>
+      <Col xs={4} md={2} className="tech-icons">
+        <GrCompliance size={40} /> {/* Risk Assessment / Compliance */}
       </Col>
-      <Col xs={4} md={2} className="tech-icons text-center">
-        <FaHtml5 size={40} />
-        <p>HTML</p>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaNetworkWired size={40} /> {/* Digital Forensics / Network Analysis */}
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaUserShield size={40} /> {/* Identity & Access Management */}
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaCloud size={40} /> {/* Cloud Security */}
       </Col>
     </Row>
   );

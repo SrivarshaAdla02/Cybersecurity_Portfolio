@@ -2,16 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-
-// Original image imports — replace these paths if needed
-import chatify from "../../Assets/Projects/chatify.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
-import editor from "../../Assets/Projects/codeEditor.png";
 import leaf from "../../Assets/Projects/leaf.png";
-
-// Placeholder images for your projects — replace later
-import scada from "../../Assets/Projects/scada.png";
-import apex from "../../Assets/Projects/apex.png";
+import emotion from "../../Assets/Projects/emotion.png";
+import editor from "../../Assets/Projects/codeEditor.png";
+import chatify from "../../Assets/Projects/chatify.png";
+import suicide from "../../Assets/Projects/suicide.png";
+import bitsOfCode from "../../Assets/Projects/blog.png";
 
 function Projects() {
   return (
@@ -25,35 +21,13 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={apex}
-              isBlog={false}
-              title="Incident Response – Apex Financials"
-              description="Detailed forensic investigation of two cyber attacks at Apex Financials. The first involved a spear-phishing ransomware attack, and the second analyzed a web shell-based intrusion. Tools used include Splunk, IDS logs, and MITRE ATT&CK mapping."
-              ghLink="https://github.com/SrivarshaAdla02/Incident-Response-Analysis-Apex-Financials-Spring-2025"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={scada}
-              isBlog={false}
-              title="SCADA & OT Security Labs"
-              description="A hands-on lab series for industrial cybersecurity including pfSense firewall, Security Onion, Snort, Wazuh, and ELK Stack. Focused on detecting intrusions and securing SCADA networks using open-source tools."
-              ghLink="https://github.com/SrivarshaAdla02/Cybersecurity-Lab-Series-for-SCADA-OT-Network-Monitoring-and-Defense"
-            />
-          </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Chatify"
-              description="Real-time chat room built with React.js, Material-UI, and Firebase. Supports image sharing, messaging, and reactions."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Incident Response – Apex Financials"
+              description="Investigated two cyberattacks targeting Apex Financials using Splunk, IDS, firewall logs, and MITRE ATT&CK. Covered phishing to ransomware and web shell-based intrusion scenarios with a detailed forensic timeline."
+              ghLink="https://github.com/SrivarshaAdla02/Incident-Response-Analysis-Apex-Financials-Spring-2025"
             />
           </Col>
 
@@ -61,10 +35,9 @@ function Projects() {
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="Personal blog built with Next.js and Tailwind CSS, rendering markdown content with dark mode support."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="SCADA & OT Cybersecurity Labs"
+              description="Built and analyzed a virtual industrial cybersecurity lab using pfSense, Snort, Wazuh, ELK stack, and Security Onion. Simulated attacks and defense mechanisms for SCADA systems with network segmentation and monitoring."
+              ghLink="https://github.com/SrivarshaAdla02/Cybersecurity-Lab-Series-for-SCADA-OT-Network-Monitoring-and-Defense"
             />
           </Col>
 
@@ -73,7 +46,7 @@ function Projects() {
               imgPath={editor}
               isBlog={false}
               title="Editor.io"
-              description="Online code and markdown editor with live preview. Built using React.js, supporting HTML/CSS/JS and auto-save."
+              description="Online code and markdown editor built with React.js. Supports HTML, CSS, JS editing and preview with auto-save using Local Storage."
               ghLink="https://github.com/soumyajit4419/Editor.io"
               demoLink="https://editor.soumya-jit.tech/"
             />
@@ -84,12 +57,31 @@ function Projects() {
               imgPath={leaf}
               isBlog={false}
               title="Plant AI"
-              description="Image classification model for plant diseases using PyTorch and ResNet34 with 98% accuracy."
+              description="Plant disease classification model using CNN and PyTorch. Trained on Kaggle data with 98% accuracy using ResNet34 to classify 38 types of leaf conditions."
               ghLink="https://github.com/soumyajit4419/Plant_AI"
               demoLink="https://plant49-ai.herokuapp.com/"
             />
           </Col>
 
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={suicide}
+              isBlog={false}
+              title="AI For Social Good"
+              description="Natural Language Processing for suicide-related content detection on social media platforms to aid early mental health intervention."
+              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={emotion}
+              isBlog={false}
+              title="Emotion Detection with CNN"
+              description="Used OpenCV and CNN (FER-2013 dataset) to predict facial emotions. Achieved ~60% accuracy and integrated with face detection for real-time emotion classification."
+              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+            />
+          </Col>
         </Row>
       </Container>
     </Container>

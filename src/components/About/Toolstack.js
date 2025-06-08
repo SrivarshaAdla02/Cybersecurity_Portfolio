@@ -6,17 +6,16 @@ import {
   SiMicrosoftazure,
   SiElastic,
 } from "react-icons/si";
-import { FaSkullCrossbones } from "react-icons/fa"; // placeholder icon
-import { FaSplunk } from "react-icons/fa"; // unofficial Splunk icon
+import { FaSkullCrossbones, FaSearch } from "react-icons/fa"; // Nessus/Autopsy and Splunk placeholder
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <SiWireshark />
+        <SiWireshark /> {/* Wireshark */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiLinux />
+        <SiLinux /> {/* Linux */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <FaSkullCrossbones /> {/* Nessus */}
@@ -28,14 +27,15 @@ function Toolstack() {
         <SiElastic /> {/* ELK Stack */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <FaSplunk /> {/* Splunk */}
+        <FaSearch /> {/* Splunk placeholder */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMicrosoftazure />
+        <SiMicrosoftazure /> {/* Azure */}
       </Col>
     </Row>
   );
 }
 
 export default Toolstack;
+
 

@@ -1,33 +1,41 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import {
-  SiVisualstudiocode,
-  SiPostman,
-  SiSlack,
-  SiVercel,
-  SiMacos,
+  SiWireshark,
+  SiLinux,
+  SiMicrosoftazure,
+  SiElastic,
 } from "react-icons/si";
+import { FaSkullCrossbones } from "react-icons/fa"; // placeholder icon
+import { FaSplunk } from "react-icons/fa"; // unofficial Splunk icon
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMacos />
+        <SiWireshark />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
+        <SiLinux />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
+        <FaSkullCrossbones /> {/* Nessus */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSlack />
+        <FaSkullCrossbones /> {/* Autopsy */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
+        <SiElastic /> {/* ELK Stack */}
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaSplunk /> {/* Splunk */}
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiMicrosoftazure />
       </Col>
     </Row>
   );
 }
 
 export default Toolstack;
+
